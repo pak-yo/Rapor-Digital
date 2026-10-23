@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+
+  <meta name="theme-color" content="#f4f6f9">
+  <meta
+    name="description"
+    content="Rapor Digital | SMP Negeri 8 Kota Pontianak"
+  >
+
+  <title>Rapor Digital</title>
+
+  <!-- Favicon Pak Yo -->
+  <link
+    rel="icon"
+    type="image/png"
+    href="https://github.com/pak-yo.png"
+  >
+
+  <!-- Optimasi koneksi -->
+  <link rel="preconnect" href="https://script.google.com">
+  <link rel="preconnect" href="https://script.googleusercontent.com">
+
+  <style>
+    /* Reset dasar */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
+    body {
+      width: 100%;
+      height: 100%;
+      height: 100dvh;
+      overflow: hidden;
+      background: #f4f6f9;
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Area utama aplikasi */
+    .app-container {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      height: 100dvh;
+      overflow: hidden;
+      background: #f4f6f9;
+    }
+
+    /* Frame Google Apps Script */
+    .app-frame {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-width: 0;
+      min-height: 0;
+      border: 0;
+      outline: none;
+      background: #ffffff;
+      color-scheme: light;
+    }
+
+    /* Tablet */
+    @media screen and (min-width: 600px) and (max-width: 1024px) {
+      .app-container {
+        width: 100%;
+        height: 100%;
+        height: 100dvh;
+      }
+    }
+
+    /* HP */
+    @media screen and (max-width: 599px) {
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        height: 100dvh;
+      }
+
+      .app-container {
+        width: 100%;
+        height: 100%;
+        height: 100dvh;
+      }
+
+      .app-frame {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+      }
+    }
+
+    /* Orientasi lanskap pada HP */
+    @media screen and (max-height: 500px) and (orientation: landscape) {
+      .app-container,
+      .app-frame {
+        height: 100%;
+        height: 100dvh;
+      }
+    }
+
+    /* Kurangi animasi yang tidak diperlukan */
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="app-container">
+    <iframe
+      id="portalFrame"
+      class="app-frame"
+      src="https://script.google.com/a/macros/guru.smp.belajar.id/s/AKfycbzfthaXbvRVJy56evAGN63ZKx4UNZmxV5SxgTFjb3gslVp5Xur9LH4tUg1yELPlyahK/exec"
+      title="Rapor Digital | SMP Negeri 8 Kota Pontianak"
+      allow="fullscreen"
+      allowfullscreen
+      loading="eager"
+      referrerpolicy="strict-origin-when-cross-origin"
+    ></iframe>
+  </main>
+</body>
+</html>
